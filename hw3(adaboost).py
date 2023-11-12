@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 from sklearn.model_selection import KFold
 
-df = pd.read_csv(r'C:\Users\qilemeng\OneDrive\Desktop\spambase.data.shuffled', header=None, sep=',')
+df = pd.read_csv(r'spambase.data.shuffled', header=None, sep=',')
 
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
